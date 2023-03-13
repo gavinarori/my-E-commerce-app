@@ -87,11 +87,11 @@ const Slider = () => {
     let intervalId;
     if (autoSlide) {
       intervalId = setInterval(() => {
-        setSlideIndex((slideIndex + 1) % sliderItems.length);
+        setSlideIndex((slideIndex + 1));
       }, 5000);
     }
     return () => clearInterval(intervalId);
-  }, [slideIndex, autoSlide, sliderItems.length]);
+  }, [slideIndex, autoSlide]);
 
   
   
