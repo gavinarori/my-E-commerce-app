@@ -101,19 +101,28 @@ import {
             humour, or randomised words which don’t look even slightly believable.
           </Desc>
           <SocialContainer>
-            <SocialIcon color="3B5999">
-              <Facebook />
-            </SocialIcon>
-            <SocialIcon color="E4405F">
-              <Instagram />
-            </SocialIcon>
-            <SocialIcon color="55ACEE">
-              <Twitter />
-            </SocialIcon>
-            <SocialIcon color="E60023">
-              <Pinterest />
-            </SocialIcon>
-          </SocialContainer>
+  <a href="https://www.facebook.com/gavin arori">
+    <SocialIcon color="3B5999">
+      <Facebook />
+    </SocialIcon>
+  </a>
+  <a href="https://www.instagram.com/brevia_dos/">
+    <SocialIcon color="E4405F">
+      <Instagram />
+    </SocialIcon>
+  </a>
+  <a href="https://twitter.com/gavinogwanwa">
+    <SocialIcon color="55ACEE">
+      <Twitter />
+    </SocialIcon>
+  </a>
+  <a href="https://www.pinterest.com/arorigavincode/">
+    <SocialIcon color="E60023">
+      <Pinterest />
+    </SocialIcon>
+  </a>
+</SocialContainer>
+
         </Left>
         <Center>
           <Title>Useful Links</Title>
