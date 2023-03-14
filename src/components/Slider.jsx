@@ -21,7 +21,7 @@ const SliderContainer = styled.div`
 const MobileBackground = styled.div`
   ${mobile({
     height: "100vh",
-    backgroundImage: "url('https://media.istockphoto.com/id/1213907347/vector/3d-smartphone-online-shopping-concepts.jpg?s=612x612&w=0&k=20&c=aTMEyPgfWIdltv0uQoZa_QkgMoitcZDaHaSQOX3L47A=')",
+    backgroundImage: "url('https://i.pinimg.com/564x/50/f6/f7/50f6f731a2ca23aa58cfe4f776ca80a8.jpg')",
     backgroundSize: "cover",
     display: "flex",
     alignItems: "center",
