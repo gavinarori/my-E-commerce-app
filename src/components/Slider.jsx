@@ -23,7 +23,6 @@ const MobileBackground = styled.div`
     height: "100vh",
     backgroundImage: "url('https://media.istockphoto.com/id/1213907347/vector/3d-smartphone-online-shopping-concepts.jpg?s=612x612&w=0&k=20&c=aTMEyPgfWIdltv0uQoZa_QkgMoitcZDaHaSQOX3L47A=')",
     backgroundSize: "cover",
-    backgroundPosition: "center",
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
