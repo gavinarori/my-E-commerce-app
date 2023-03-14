@@ -9,7 +9,7 @@ const Container = styled.div`
   height: 60px;
   background-color:black;
   color:white;
-  ${mobile({ height: "50px" })}
+  ${mobile({ height: "60px" })}
 `;
 
 const Wrapper = styled.div`
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ${mobile({ padding: "10px 0px" })}
+  ${mobile({ padding: "0px 10px" })}
 `;
 
 const Left = styled.div`
@@ -52,7 +52,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  ${mobile({ fontSize: "24px" })}
+  ${mobile({ fontSize: "22px" })}
 `;
 const Right = styled.div`
   flex: 1;

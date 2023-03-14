@@ -15,7 +15,7 @@ import {
     background: rgb(9,3,3);
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
     color:white;
-    ${mobile({ flexDirection: "column" })}
+    ${mobile({ flexDirection: "column",height: "100%" })}
   `;
   
   const Left = styled.div`
@@ -76,6 +76,7 @@ import {
     flex: 1;
     padding: 20px;
     ${mobile({ backgroundColor: "#fff8f8" })}
+    ${mobile({ display: "none" })}
   `;
   
   const ContactItem = styled.div`
@@ -85,7 +86,8 @@ import {
   `;
   
   const Payment = styled.img`
-      width: 50%;
+      width: 60%;
+      ${mobile({ display: "none" })}
   `;
   
   const Footer = () => {
@@ -138,8 +140,8 @@ import {
           </ContactItem>
           <ContactItem>
             <MailOutline style={{marginRight:"10px"}} /> homeshopcontact@gmail.com
+            <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
           </ContactItem>
-          <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
         </Right>
       </Container>
     );

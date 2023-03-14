@@ -71,7 +71,9 @@ const Login = () => {
           </NavLink>
           
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
+          <NavLink to="/Register" end>
           <Link>CREATE A NEW ACCOUNT</Link>
+          </NavLink>
         </Form>
       </Wrapper>
     </Container>

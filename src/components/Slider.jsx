@@ -10,7 +10,24 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ display: "none" })}
+`;
+
+const SliderContainer = styled.div`
+  width: 100%;
+  height: 80%;
+
+`;
+
+const MobileBackground = styled.div`
+  ${mobile({
+    height: "100vh",
+    backgroundImage: "url('https://media.istockphoto.com/id/1213907347/vector/3d-smartphone-online-shopping-concepts.jpg?s=612x612&w=0&k=20&c=aTMEyPgfWIdltv0uQoZa_QkgMoitcZDaHaSQOX3L47A=')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  })}
 `;
 
 const Arrow = styled.div`
@@ -30,6 +47,7 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
+  ${mobile({ display: "none" })}
 `;
 
 const Wrapper = styled.div`
@@ -37,6 +55,7 @@ const Wrapper = styled.div`
   display: flex;
   transition: all 1.5s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
+  ${mobile({ display: "none" })}
 `;
 
 const Slide = styled.div`
@@ -93,23 +112,18 @@ const Slider = () => {
     return () => clearInterval(intervalId);
   }, [slideIndex, autoSlide]);
 
-  
-  
-  
   const handleClick = (direction) => {
     setAutoSlide(false);
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderItems.length - 1);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < sliderItems.length - 1 ? slideIndex + 1 : 0);
     }
-  };
-
-
-
-
+      }
   return (
     <Container>
+      <SliderContainer>
+        <MobileBackground >
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
@@ -130,6 +144,8 @@ const Slider = () => {
       <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>
+      </MobileBackground>
+      </SliderContainer>
     </Container>
   );
 };
